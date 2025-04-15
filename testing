@@ -1,0 +1,49 @@
+<div class="sidebar">
+  <ul class="menu">
+    <li [class.active]="selected === 'Inbox'" (click)="selectItem('Inbox')">Inbox</li>
+    <li [class.active]="selected === 'Sent Items'" (click)="selectItem('Sent Items')">Sent Items</li>
+    <li [class.active]="selected === 'Drafts'" (click)="selectItem('Drafts')">
+      Drafts <span class="count">[1]</span>
+    </li>
+    <li [class.active]="selected === 'Deleted Items'" (click)="selectItem('Deleted Items')">
+      Deleted Items <span class="count">26</span>
+    </li>
+  </ul>
+</div>
+
+
+
+.sidebar {
+    width: 200px;
+    background-color: #f5f7f8;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu li:hover {
+    background-color: #e1e4e6;
+  }
+  
+  .menu li.active {
+    background-color: #e1e4e6;
+    font-weight: bold;
+  }
+  
+  .count {
+    color: #0078d4;
+  }

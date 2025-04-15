@@ -1,0 +1,38 @@
+
+.sidemenu{
+display: flex; 
+width:45px;
+height: 65vh;
+
+}
+
+.menu-ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    background-color:rgb(216 210 220 / 35%);
+    align-items: center;
+
+
+}
+
+li{
+    padding: 10px;
+    cursor: pointer;
+    font-size: larger;
+
+   
+}
+
+li:hover{
+    background-color: rgba(216, 210, 220, 0.988);
+}
+.textvert{
+    writing-mode: vertical-lr;
+    text-orientation:mixed;
+    font-size: 15px;
+    font-size: larger;
+
+
+
+}
