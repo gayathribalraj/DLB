@@ -1,9 +1,14 @@
-<!-- 
-<app-menu></app-menu>
+<app-header-inbox></app-header-inbox>
+
+<div class="inbox-container">
+ <div  *ngFor="let email of inboxValue ">
+
+    <div><p>{{email.email}}</p></div>
+    <div><p>{{email.sub}}</p></div>
+    <div><p>{{email.msg}}</p></div>
+    <hr>
+</div>
 
 
- <div><p>pms@sysarcinformatix...</p></div>
-<div>
-<div><p>PMS -TimeSheet Reminder: In...</p></div>
-<div>11:00</div>
-</div> --> 
+
+</div>

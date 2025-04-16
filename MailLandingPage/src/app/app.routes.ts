@@ -7,12 +7,17 @@ import { SentItemComponent } from './components/sent-item/sent-item.component';
 import { DraftsComponent } from './components/drafts/drafts.component';
 import { DeletedItemsComponent } from './components/deleted-items/deleted-items.component';
 import { HeaderInboxComponent } from './components/header-inbox/header-inbox.component';
+import { MainComponent } from './components/main/main.component';
 export const routes: Routes = [
 
     {
         path:'',
-        redirectTo:'header-inbox',
+        redirectTo:'inbox',
         pathMatch:'full'
+    },
+    {
+        path:'main',
+        component:MainComponent
     },
     {
         path:'menu',
@@ -41,7 +46,8 @@ export const routes: Routes = [
     {
         path:'header-inbox',
         component:HeaderInboxComponent
-    },
+    }
+  
     
 
 ];

@@ -1,3 +1,6 @@
-.inbox-container{
-    display: flex;
+
+.inbox-container >div{
+    flex-direction: row;
+    width: 50%;
+
 }

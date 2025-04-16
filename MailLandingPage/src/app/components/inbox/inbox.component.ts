@@ -1,13 +1,30 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MainComponent } from '../main/main.component';
-import { MenuComponent } from '../menu/menu.component';
+import { HeaderInboxComponent } from '../header-inbox/header-inbox.component';
 
 @Component({
   selector: 'app-inbox',
-  imports: [MenuComponent],
+  imports: [
+    CommonModule,
+    HeaderInboxComponent
+
+  ],
   templateUrl: './inbox.component.html',
   styleUrl: './inbox.component.scss'
 })
 export class InboxComponent {
+
+  inboxValue=[
+    {email:"pms@sysarcinformatix...", sub:"PMS - TimeSheet Reminder:In...",msg:"Hi, Karthick D"},
+    {email:"pms@sysarcinformatix...", sub:"PMS - TimeSheet Reminder:In...",msg:"Hi, Karthick D"},
+    {email:"pms@sysarcinformatix...", sub:"PMS - TimeSheet Reminder:In...",msg:"Hi, Karthick D"},
+    {email:"pms@sysarcinformatix...", sub:"PMS - TimeSheet Reminder:In...",msg:"Hi, Karthick D"},
+    {email:"pms@sysarcinformatix...", sub:"PMS - TimeSheet Reminder:In...",msg:"Hi, Karthick D"},
+    {email:"pms@sysarcinformatix...", sub:"PMS - TimeSheet Reminder:In...",msg:"Hi, Karthick D"},
+    {email:"pms@sysarcinformatix...", sub:"PMS - TimeSheet Reminder:In...",msg:"Hi, Karthick D"},
+    {email:"pms@sysarcinformatix...", sub:"PMS - TimeSheet Reminder:In...",msg:"Hi, Karthick D"},
+    {email:"pms@sysarcinformatix...", sub:"PMS - TimeSheet Reminder:In...",msg:"Hi, Karthick D"}
+
+  ]
 
 }

@@ -14,26 +14,6 @@ export class MenuComponent {
 
   }
 
-
-  // selected0 = '' ;
-  // selected1 = 'Inbox' ;
-  // selected2 = 'sentitem';
-  // selected3 = 'draft';
-  // selected4 = 'deleted-items';
-
-
-
-  // selectItem(item: string){
-  //   this.selected0 =item;
-  //   this.selected1 =item;
-  //   this.selected2 =item;
-  //   this.selected3 =item;
-  //   this.selected4 =item;
-
-
-  // }
-  
-
   selectItem1(){
 
    this.router.navigateByUrl('inbox')

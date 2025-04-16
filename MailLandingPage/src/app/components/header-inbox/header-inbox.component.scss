@@ -3,12 +3,16 @@
     padding: 0%;
 }
 
-
-.inbox-container{
-    display: flex;
-    width: 50%;
-    height: 100vh;
-    border: 2px solid rgba(0, 0, 0, 0.192)
-    
+.header-inbox-container > div {
+        display: flex;
+        width: 100%;
 }
+
+.left-inbox-menu {
+    display: flex;
+    cursor: pointer;
+    justify-content:space-between;
+
+}
+
 
