@@ -6,11 +6,12 @@ import { NgModule } from '@angular/core';
 import { SentItemComponent } from './components/sent-item/sent-item.component';
 import { DraftsComponent } from './components/drafts/drafts.component';
 import { DeletedItemsComponent } from './components/deleted-items/deleted-items.component';
+import { HeaderInboxComponent } from './components/header-inbox/header-inbox.component';
 export const routes: Routes = [
 
     {
         path:'',
-        redirectTo:'inbox',
+        redirectTo:'header-inbox',
         pathMatch:'full'
     },
     {
@@ -36,6 +37,10 @@ export const routes: Routes = [
     {
         path:'deleted-items',
         component:DeletedItemsComponent
+    },
+    {
+        path:'header-inbox',
+        component:HeaderInboxComponent
     },
     
 
